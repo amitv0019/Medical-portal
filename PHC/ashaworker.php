@@ -40,6 +40,7 @@
 		<tr>
 			<td align="left">Gender:</td>
 			<td> 
+				<input type="radio" name="sex" value="1" check>
 					Male			
 
 				<input type="radio" name="sex" value="2" check>
