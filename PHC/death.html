@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Death form</title>
+	<style>
+		form {
+			width: 500px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+ <center>
+  <form method="post">
+    <fieldset >
+      <legend>Death Form</legend>
+      <table >
+
+		<tr>
+			<td>Name:</td>
+			<td><input type=text name="name" max=100 placeholder="e.g.-Raman" size=40 pattern="[a-zA-Z0-9]+"></td>
+		</tr>
+		
+		<tr>
+			<td align="left">Aadhar number:</td>
+			<td><input type="number" name="a_no" max="999999999999" size=40 placeholder="only numbers" size=40 pattern="[0-9]"></td>
+		</tr>
+		
+		<tr>
+			<td align="left">Age:</td>
+			<td><input type="number" name="age" max="150" size=40 placeholder="age of decendent" size=40 pattern="[0-9]"></td>
+		</tr>
+		
+		<tr>
+			<td align="left">Gender:</td>
+			<td> 
+				<input type="radio" name="sex" value="1" check>
+					Male			
+
+				<input type="radio" name="sex" value="2" check>
+					Female
+				
+				<input type="radio" name="sex" value="3" check>
+					Other
+			</td>
+		</tr>
+
+		<tr>
+			<td>Date of Death(D.O.D)</td>
+
+			<td><input type=Date name="date" > </td>
+		</tr>
+		
+		<tr>
+			<td>Relative's name:</td>
+			<td><input type=text name="r_name" maxlength=100 placeholder="e.g.-Ayush Verma" size=40 pattern="[a-zA-Z0-9]+"></td>
+		</tr>
+
+		<tr>
+			<td>Relative's Relation:</td>
+			<td><input type=text name="r_relation" maxlength=100 placeholder="e.g.-Son / Daughter / Brother" size=40 pattern="[a-zA-Z]+"></td>
+		</tr>
+		
+		<tr>
+			<td align="right">Reason of Death:</td>
+			<td><textarea rows='5' cols='40' name="Reason" placeholder="eg-Natural Death"></textarea></td>
+		</tr>
+		
+	   </table>
+		<center>
+			<input type="Submit" name="submit" value="Submit" check>
+			<input type="Reset" name="reset" value="Reset" check>    
+		</center>
+	</fieldset>
+   </form>
+ <center>
+</body>
+</html>

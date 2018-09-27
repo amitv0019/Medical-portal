@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Birth form</title>
+	<style>
+		body  {
+			background-color :orange;
+		}
+		form {
+			width: 500px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+ <center>
+  <form method="pre">
+    <fieldset >
+      <legend>Birth Form</legend>
+      <table >
+
+		<tr>
+			<td>Child name:</td>
+			<td><input type=text name="c_name" maxlength=100 placeholder="e.g.-Raman" size=40 pattern="[a-zA-Z0-9]+"></td>
+		</tr>
+
+		<tr>
+			<td>Father's name:</td>
+			<td><input type=text name="f_name" maxlength=100 placeholder="e.g.-Ayush Verma" size=40 pattern="[a-zA-Z0-9]+"></td>
+		</tr>
+
+		<tr>
+			<td>Mother's name:</td>
+			<td><input type=text name="m_name" maxlength=100 placeholder="e.g.-Pragati Verma" size=40 pattern="[a-zA-Z0-9]+"></td>
+		</tr>
+
+		<tr>
+			<td align="left">Gender:</td>
+			<td> 
+				<input type="radio" name="sex" value="1" check>
+					Male			
+
+				<input type="radio" name="sex" value="2" check>
+					Female
+			</td>
+		</tr>
+
+		<tr>
+			<td>Date of Birth(D.O.B)</td>
+
+			<td><input type=Date name="date" > </td>
+		</tr>
+
+	   </table>
+		<center>
+			<input type="Submit" name="submit" value="Submit" check>
+			<input type="Reset" name="reset" value="Reset" check>    
+		</center>
+	</fieldset>
+   </form>
+ <center>
+</body>
+</html>

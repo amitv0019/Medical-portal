@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cases</title>
+	<style>
+		form {
+			width: 500px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+ <center>
+  <form method="post">
+    <fieldset >
+      <legend>Case</legend>
+      <table >
+	  
+		<tr>
+			<td align="left">Aadhar number:</td>
+			<td><input type="number" name="a_no" max="999999999999" size=40 placeholder="only numbers" size=40 pattern="[0-9]"></td>
+		</tr>
+	  
+		<tr>
+			<td>Name:</td>
+			<td><input type=text name="name" maxlength=100 placeholder="e.g.-Raman Verma" size=40 pattern="[a-zA-Z0-9]+"></td>
+		</tr>
+		
+		<tr>
+			<td align="left">Gender:</td>
+			<td> 
+				<input type="radio" name="sex" value="1" check>
+					Male			
+
+				<input type="radio" name="sex" value="2" check>
+					Female
+				
+				<input type="radio" name="sex" value="3" check>
+					Other
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Date of Birth(D.O.B)</td>
+
+			<td><input type=Date name="date" > </td>
+		</tr>
+		
+		<tr>
+			<td align="left">Village Id:</td>
+			<td><input type="number" name="v_id" max="99999999999" size=40 placeholder="only numbers" size=40 pattern="[0-9]"></td>
+		</tr>
+		
+		<tr>
+			<td>Address:</td>
+			<td><input type=text name="address" maxlength=100 placeholder="e.g.-Lane-5,House no. 4,Nehru Coluny." size=40 pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"></td>
+		</tr>
+		
+		<tr>
+			<td align="left">Contact Number:</td>
+			<td><input type="number" name="c_no" max="9999999999" size=40 placeholder="only numbers" size=40 pattern="[0-9]"></td>
+		</tr>
+		
+		<tr>
+			<td align="left">Health Status:</td>
+			<td> 
+				<input type="radio" name="Health_status" value="1" check>
+					Healthy			
+
+				<input type="radio" name="Health_status" value="2" checked="checked">
+					Ill
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Disease:</td>
+			<td><input type=text name="disease" maxlength=100 placeholder="e.g.-Typhoid,Common cold" size=40 pattern="[a-zA-Z0-9]+"></td>
+		</tr>
+		
+		<tr>
+			<td>Disease Id</td>
+			<td><input type=number name="disease_id" max=99999 placeholder="e.g.-4783" size=40 pattern="[0-9]+"></td>
+		</tr>
+		
+		<tr>
+			<td>Doctor Id</td>
+			<td><input type=number name="doctor_id" max=99999 placeholder="e.g.-4783" size=40 pattern="[0-9]+"></td>
+		</tr>
+		
+		<tr>
+			<td>Date of Detection</td>
+			<td><input type=Date name="date_detection" > </td>
+		</tr>
+		
+		<tr>
+			<td>Appointment date</td>
+			<td><input type=Date name="a_date" > </td>
+		</tr>
+		
+		<tr>
+			<td>Next Appointment date</td>
+			<td><input type=Date name="na_date" > </td>
+		</tr>
+		
+		<tr>
+			<td>Medicine name:</td>
+			<td><input type=text name="medicine_name" maxlength=100 placeholder="e.g.-Lime C" size=40 pattern="[a-zA-Z0-9]+"></td>
+		</tr>
+		
+		<tr>
+			<td align="left">Medicine dose per day:</td>
+			<td><input type="number" name="dose_no" max="9" size=40 placeholder="only numbers" size=40 pattern="[0-9]"></td>
+		</tr>
+		
+	   </table>
+		<center>
+			<input type="Submit" name="submit" value="Submit" check>
+			<input type="Reset" name="reset" value="Reset" check>    
+		</center>
+	</fieldset>
+   </form>
+ <center>
+</body>
+</html>
